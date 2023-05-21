@@ -11,7 +11,7 @@
         text-align: center; 
         font-size: 28px;
         position: relative;
-        top: 50px;
+        top: 10px;
 
     }
 
@@ -45,6 +45,21 @@
         border: 2px solid black;
         border-radius: 10px;
     }
+
+    .imagediv {
+        background-color: rgb(100, 100, 100);
+        margin: auto;
+        width: 90%;
+        border-radius: 10px;
+        border-color: black;
+    }
+
+    img {
+        border-radius: 10px;
+        border-color: black;
+
+
+    }
     
     
 </style>
@@ -58,18 +73,18 @@
     <divtext>
         <h1>Matti's Images</h1>
     </divtext>
+    <div class="imagediv">
+    <img src="pictures/Screenshot 2023-05-10 214607.png" width="400" height="400" style="margin: 10px">
+    <img src="pictures/Screenshot 2023-05-10 214607.png" width="400" height="400" style="margin: 10px">
+    <img src="pictures/Screenshot 2023-05-10 214607.png" width="400" height="400" style="margin: 10px">
 
-    <?php
-    $folder = 'C:\Users\Mathias\Documents\image gallery website\pictures';
+    <img src="pictures/Screenshot 2023-05-10 214607.png" width="400" height="400" style="margin: 10px">
 
-    // Get all image files from the folder
-    $files = glob($folder . '*.{jpg,jpeg,png,gif}', GLOB_BRACE);
+    <img src="pictures/Screenshot 2023-05-10 214607.png" width="400" height="400" style="margin: 10px">
 
-    // Display each image
-    foreach ($files as $file) {
-        echo '<img src="' . $file . '" alt="Image">';
-    }
-    ?>
-
+    <img src="pictures/Screenshot 2023-05-10 214607.png" width="400" height="400" style="margin: 10px">
+    <img src="pictures/Screenshot 2023-05-10 214607.png" width="400" height="400" style="margin: 10px">
+    <img src="pictures/Screenshot 2023-05-10 214607.png" width="400" height="400" style="margin: 10px">
+</div>
 
 </body>

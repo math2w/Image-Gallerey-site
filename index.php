@@ -60,16 +60,13 @@
     </divtext>
 
     <?php
-    $folder = 'C:\Users\Mathias\Documents\image gallery website\pictures';
-
-    // Get all image files from the folder
-    $files = glob($folder . '*.{jpg,jpeg,png,gif}', GLOB_BRACE);
-
-    // Display each image
-    foreach ($files as $file) {
-        echo '<img src="' . $file . '" alt="Image">';
+    $files = scandir('path/to/img/directory/');
+    foreach($files as $file) {
+        if($file !== "." && $file !== "..") {
+            echo "<img src='$file' />";
+        }
     }
-    ?>
+?>
 
 
 </body>
